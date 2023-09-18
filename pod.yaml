@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: jenkins-demo
+spec:
+  containers:
+    - name: spec
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
+          protocol: TCP
