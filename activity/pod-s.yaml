@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+  labels: 
+    name: demo
+spec:
+  containers:
+    - name: con
+      image: nginix
+      env:
+        - name: purpose
+          value: learning
+      ports:
+        - containerPort: 80
+          protocol: TCP
